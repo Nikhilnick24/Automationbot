@@ -8,15 +8,17 @@ import tweepy
 
 
 # In[ ]:
-
+# I cannot disclose by oauth_consumer_key ,oauth_consumer_secret ,oauth_access_token and oauth_access_token_secret as it is intended for Specific user Only.
+# You can get these keys By creating your  twitter Developer account which is free of cost. Just visit https://developer.twitter.com/.
 
 import tweepy
 import time
 twitter_auth_key = {
-        "oauth_consumer_key" : "ChGgg0SyY2utG7LMh9JOye932",
-        "oauth_consumer_secret" : "yRj7uTBieALMataSClF0zShCq8hqBZvxVuWYx61pAbV8Olpags",
-        "oauth_access_token" : "1278713407277944833-rt35awdTwbLz5frzeaFzNcx8t5V93F",
-        "oauth_access_token_secret" : "NObugQoVo1wb8vyyAvN7iKy78TxnV9Oo1mvSWwLqLZRhB"
+        "oauth_consumer_key" : "*****************",
+        "oauth_consumer_secret" : "************************",
+        "oauth_access_token" : "****************************************",
+        "oauth_access_token_secret" : "**************************"
+        
     }
 auth = tweepy. OAuthHandler (twitter_auth_key['oauth_consumer_key'], twitter_auth_key['oauth_consumer_secret'])
 auth.set_access_token(twitter_auth_key['oauth_access_token'], twitter_auth_key['oauth_access_token_secret'])
@@ -30,7 +32,7 @@ def main():
             time.sleep(20)
             break
         
-            break
+Print("Retweeting")          
 while True:
     main()
     time.sleep(20)
