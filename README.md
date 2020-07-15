@@ -1,0 +1,2 @@
+# Automationbot
+Twitter bot 
